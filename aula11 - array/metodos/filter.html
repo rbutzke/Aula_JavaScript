@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Metodo Filter</title>
+</head>
+<body>
+
+
+<script>
+
+
+	let a1 = ['Rg', 21122233, 'CPF', 888877755 , 'Telefone', 4788998899];
+
+	let a2 = a1.filter((item) => { return typeof item === 'string'; });
+
+    console.log('Array Original -----');
+
+	a1.forEach(element => {console.log(element)});
+
+    console.log('Campo Filtrado -----');
+
+	//console.log(a2); // mostra [10, 20, 30]
+	a2.forEach(element => {console.log(element)});
+
+	a2 = a1.filter((item) => { return typeof item === 'number'; });
+
+    console.log('Conteudo Filtrado -----');
+
+	a2.forEach(element => {console.log(element)});
+
+</script>
+
+</body>
+</html>
